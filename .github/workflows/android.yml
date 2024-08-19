@@ -23,6 +23,6 @@ jobs:
     # - name: Grant execute permission for gradlew
     #   run: chmod +x gradlew
     - name: Download dependencies
-      run: apt install automake ant autopoint cmake build-essential libtool-bin patch pkg-config protobuf-compiler ragel subversion unzip git openjdk-8-jre openjdk-8-jdk flex python wget
+      run: sudo apt install automake ant autopoint cmake build-essential libtool-bin patch pkg-config protobuf-compiler ragel subversion unzip git openjdk-8-jre openjdk-8-jdk flex python wget
     - name: Build app
       run: buildsystem/compile.sh -l -r -a arm64

@@ -35,11 +35,13 @@ jobs:
     - name: Download Android SDK
       run: wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
     - name: Make Driectory for SDK
-      run: mkdir ./sdk
+      run: mkdir ./vlc-sdk
     - name: Extract Android SDK
       run: unzip commandlinetools-linux-*.zip -d ./sdk
+    - name: Test sdk path
+      run: ls
     - name: Set the SDK eviornment variable
-      run: export ANDROID_SDK=./sdk
+      run: export ANDROID_SDK=./vlc-sdk
     - name: Test env vars
       run: echo $ANDROID_NDK
     - name: Test env vars

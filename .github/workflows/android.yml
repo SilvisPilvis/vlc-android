@@ -40,5 +40,7 @@ jobs:
       run: unzip commandlinetools-linux-*.zip -d ./sdk
     - name: Set the SDK eviornment variable
       run: export ANDROID_SDK=./sdk
+    - name: Test env vars
+      run: echo $ANDROID_NDK $ANDROID_SDK
     - name: Build app
       run: buildsystem/compile.sh -l -r -a arm64

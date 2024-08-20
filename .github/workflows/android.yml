@@ -35,7 +35,7 @@ jobs:
     - name: Download Android SDK
       run: wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
     - name: Make Driectory for SDK
-      run: mkdir sdk
+      run: mkdir ./sdk
     - name: Extract Android SDK
       run: unzip commandlinetools-linux-*.zip -d ./sdk
     - name: Set the SDK eviornment variable

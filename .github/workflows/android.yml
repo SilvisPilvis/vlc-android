@@ -41,6 +41,8 @@ jobs:
     - name: Set the SDK eviornment variable
       run: export ANDROID_SDK=./sdk
     - name: Test env vars
-      run: echo $ANDROID_NDK && echo $ANDROID_SDK
+      run: echo $ANDROID_NDK
+    - name: Test env vars
+      run: echo $ANDROID_SDK
     - name: Build app
       run: buildsystem/compile.sh -l -r -a arm64

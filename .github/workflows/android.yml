@@ -45,4 +45,4 @@ jobs:
     - name: Test env vars
       run: echo $ANDROID_SDK
     - name: Build app
-      run: buildsystem/compile.sh -l -r -a arm64
+      run: buildsystem/compile.sh -l --release -a arm64

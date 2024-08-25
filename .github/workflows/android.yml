@@ -25,13 +25,13 @@ jobs:
     - name: Update
       run: sudo apt update && sudo apt upgrade -y
     - name: Download dependencies
-      run: sudo apt install automake ant autopoint cmake build-essential libtool-bin patch pkg-config protobuf-compiler ragel subversion unzip git openjdk-8-jre openjdk-8-jdk flex python3 wget
+      run: sudo apt install automake ant autopoint cmake build-essential libtool-bin patch pkg-config protobuf-compiler ragel subversion unzip git openjdk-17-jre openjdk-17-jdk flex python3 wget
     - name: Get Android NDK
-      run: wget https://dl.google.com/android/repository/android-ndk-r27-linux.zip
+      run: wget https://dl.google.com/android/repository/android-ndk-r21e-linux.zip
     - name: Extract Android NDK
-      run: unzip android-ndk-r27-linux.zip -d ./
+      run: unzip android-ndk-r21e-linux.zip -d ./
     - name: Set the NDK eviornment variable
-      run: export ANDROID_NDK=./android-ndk-r27
+      run: export ANDROID_NDK=./android-ndk-r21e
     - name: Download Android SDK
       run: wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
     - name: Make Driectory for SDK
